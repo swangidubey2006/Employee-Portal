@@ -21,7 +21,7 @@ const Sidebar = () => {
   const menuItems = [
     { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
     { name: 'Attendance', path: '/attendance', icon: Calendar },
-    { name: 'Leave Management', path: '/leave', icon: CalendarCheck },
+    { name: 'Leave Management', path: '/leave-management', icon: CalendarCheck },
     { name: 'My Tasks', path: '/tasks', icon: CheckSquare },
     { name: 'Documents', path: '/documents', icon: FileText },
     { name: 'Employee Directory', path: '/directory', icon: Users },

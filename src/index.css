@@ -3369,3 +3369,1027 @@ html, body {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Leave Management Page Styling
+   ========================================================================== */
+
+.leave-page-body {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.leave-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.leave-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.leave-sub-title {
+  font-size: 0.85rem;
+  color: #64748B;
+  margin-top: 0.15rem;
+}
+
+/* 1. Summary Cards Grid */
+.leave-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.leave-summary-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.summary-card-top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.summary-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-card-title {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.summary-card-bottom-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.summary-card-val {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.summary-card-sub {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #94A3B8;
+}
+
+/* 2. Main Two-Column Layout */
+.leave-two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+}
+
+.leave-left-column,
+.leave-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Common Card Box */
+.leave-card-box {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.leave-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge-new-request {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.06em;
+}
+
+/* Form Styling */
+.leave-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.three-col-input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.leave-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.input-label-sm {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.select-input-wrapper,
+.date-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.leave-custom-select,
+.leave-custom-input {
+  width: 100%;
+  height: 38px;
+  padding: 0 0.85rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1E293B;
+  outline: none;
+  appearance: none;
+}
+
+.select-dropdown-icon,
+.date-picker-icon {
+  position: absolute;
+  right: 10px;
+  color: #64748B;
+  pointer-events: none;
+}
+
+.leave-custom-textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #1E293B;
+  outline: none;
+  resize: vertical;
+}
+
+.leave-custom-textarea::placeholder {
+  color: #94A3B8;
+}
+
+.leave-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* History Table Styling */
+.history-filters-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.filter-pill-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+}
+
+.filter-icon {
+  color: #64748B;
+}
+
+.filter-label-prefix {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.filter-select-inline {
+  border: none;
+  background: transparent;
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: #0F172A;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  padding-right: 12px;
+}
+
+.filter-arrow {
+  color: #64748B;
+  pointer-events: none;
+  margin-left: -10px;
+}
+
+.leave-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.leave-history-table th {
+  background-color: #F8FAFC;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.leave-history-table td {
+  padding: 0.85rem;
+  font-size: 0.8rem;
+  color: #334155;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.font-bold-id {
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.badge-status-approved {
+  background-color: #ECFDF5;
+  color: #059669;
+}
+
+.badge-status-pending {
+  background-color: #F1F5F9;
+  color: #64748B;
+}
+
+.badge-status-rejected {
+  background-color: #FEF2F2;
+  color: #DC2626;
+}
+
+/* Leave Calendar Right Column */
+.calendar-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.calendar-month-heading {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.leave-cal-grid-headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.cal-header-day {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #94A3B8;
+}
+
+.leave-cal-grid-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.cal-day-box {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cal-day-box:hover {
+  background-color: #F1F5F9;
+}
+
+.cal-day-box.muted {
+  color: #CBD5E1;
+}
+
+.cal-day-box.is-selected-date {
+  border: 1.5px solid #0F172A;
+  font-weight: 800;
+}
+
+.cal-day-box.is-approved-date {
+  background-color: #10B981;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.leave-calendar-legend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #F1F5F9;
+  font-size: 0.7rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.dot-approved {
+  background-color: #10B981;
+}
+
+.dot-pending {
+  background-color: #64748B;
+}
+
+.dot-rejected {
+  background-color: #EF4444;
+}
+
+.dot-holidays {
+  background-color: #34D399;
+}
+
+/* Upcoming Holidays Right Column */
+.margin-bottom-md {
+  margin-bottom: 0.85rem;
+}
+
+.holidays-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.holiday-list-item {
+  background-color: #F8FAFC;
+  border: 1px solid #F1F5F9;
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.holiday-list-item:hover {
+  background-color: #F1F5F9;
+}
+
+.holiday-date-badge {
+  background-color: #D1FAE5;
+  border-radius: 8px;
+  padding: 0.35rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+}
+
+.holiday-month-code {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #047857;
+  letter-spacing: 0.05em;
+}
+
+.holiday-day-num {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #047857;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.holiday-title-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.holiday-item-name {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.holiday-item-day {
+  font-size: 0.7rem;
+  color: #64748B;
+  margin-top: 0.1rem;
+}
+
+.holiday-arrow-icon {
+  color: #94A3B8;
+}
+
+.btn-view-all-holidays {
+  width: 100%;
+  padding: 0.55rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.btn-view-all-holidays:hover {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+/* Need Help Dark Card */
+.need-help-dark-card {
+  position: relative;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.help-card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.help-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.help-card-subtext {
+  font-size: 0.775rem;
+  color: #94A3B8;
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+}
+
+.btn-contact-hr {
+  align-self: flex-start;
+  padding: 0.55rem 1.15rem;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: #0F172A;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-contact-hr:hover {
+  background-color: #F1F5F9;
+}
+
+.help-card-bg-icon {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+/* Leave Management Responsive Rules */
+@media (max-width: 1050px) {
+  .leave-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leave-two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .leave-summary-grid,
+  .three-col-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leave-card-header,
+  .history-filters-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   My Tasks Page Styling
+   ========================================================================== */
+
+.tasks-page-body {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tasks-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.tasks-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.tasks-sub-title {
+  font-size: 0.85rem;
+  color: #64748B;
+  margin-top: 0.15rem;
+}
+
+/* 1. Summary Cards Grid */
+.tasks-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.task-summary-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.task-card-label {
+  font-size: 0.675rem;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.06em;
+}
+
+.task-card-val {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 0.75rem;
+}
+
+.text-dark {
+  color: #0F172A;
+}
+
+.text-orange {
+  color: #F97316;
+}
+
+/* 2. Featured Task Section (Today's Assigned Work) */
+.featured-task-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-title-md {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.featured-task-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.65rem 1.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.featured-task-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.badge-high-priority-pill {
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: #DC2626;
+  background-color: #FEF2F2;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  letter-spacing: 0.04em;
+}
+
+.featured-task-id {
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: #94A3B8;
+}
+
+.featured-task-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.4rem;
+}
+
+.featured-task-desc {
+  font-size: 0.825rem;
+  color: #64748B;
+  line-height: 1.45;
+  margin-bottom: 1.15rem;
+}
+
+.featured-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.meta-icon {
+  color: #64748B;
+}
+
+.btn-view-details {
+  padding: 0.65rem 1.5rem;
+  background-color: #0F172A;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-view-details:hover {
+  background-color: #1E293B;
+}
+
+/* 3. Task Board Columns */
+.task-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.task-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.35rem;
+}
+
+.col-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.col-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.column-name {
+  font-size: 0.725rem;
+  font-weight: 800;
+  color: #334155;
+  letter-spacing: 0.05em;
+}
+
+.col-count-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
+
+.badge-count-slate {
+  background-color: #F1F5F9;
+  color: #64748B;
+}
+
+.badge-count-green {
+  background-color: #DCFCE7;
+  color: #059669;
+}
+
+.badge-count-orange {
+  background-color: #FFEDD5;
+  color: #EA580C;
+}
+
+.badge-count-emerald {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.column-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-board-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.task-board-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-color: #CBD5E1;
+}
+
+.task-tag-badge {
+  align-self: flex-start;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.badge-tag-standard {
+  background-color: #EFF6FF;
+  color: #2563EB;
+}
+
+.badge-tag-high {
+  background-color: #FEF2F2;
+  color: #DC2626;
+}
+
+.badge-tag-progress {
+  background-color: #ECFDF5;
+  color: #059669;
+}
+
+.badge-tag-pending {
+  background-color: #FFEDD5;
+  color: #EA580C;
+}
+
+.badge-tag-done {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.task-board-title {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.35;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+  color: #94A3B8;
+}
+
+.task-board-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #F8FAFC;
+}
+
+.task-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.725rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.meta-icon-sm {
+  color: #94A3B8;
+}
+
+/* Task Modal Details */
+.modal-task-card {
+  width: 520px;
+}
+
+.modal-task-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-task-id {
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: #94A3B8;
+}
+
+.margin-top-xs {
+  margin-top: 0.2rem;
+}
+
+.modal-task-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.modal-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748B;
+  min-width: 90px;
+}
+
+.detail-val-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #0F172A;
+}
+
+.badge-status-dark {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 0.2rem 0.65rem;
+  border-radius: 12px;
+}
+
+.modal-desc-box {
+  background-color: #F8FAFC;
+  border: 1px solid #F1F5F9;
+  border-radius: 8px;
+  padding: 0.85rem;
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.desc-box-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #94A3B8;
+}
+
+.desc-box-text {
+  font-size: 0.8rem;
+  color: #334155;
+  line-height: 1.45;
+}
+
+/* Tasks Responsive Rules */
+@media (max-width: 1050px) {
+  .tasks-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .task-board-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .tasks-summary-grid,
+  .task-board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-task-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .btn-view-details {
+    width: 100%;
+  }
+
+  .featured-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
